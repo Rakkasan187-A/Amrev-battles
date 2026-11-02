@@ -1,1 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Road to Independence: 5 Key Battles of the American Revolution</title>
+<style>
+:root{--blue:#1f4e9c;--lblue:#4aa3df;--red:#b8312f;--ink:#1d2430;--muted:#5b6575;--paper:#fbf8f1;--card:#fff;--line:#e3ddd0;--gold:#c99a2e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px}
+a{color:var(--blue)}
+header.top{position:sticky;top:0;z-index:50;background:#14233f;color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.bar{max-width:1150px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:8px 14px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.3px;font-size:1.05rem;margin-right:auto;color:#fff;text-decoration:none}
+.brand small{display:block;font-weight:500;font-size:.72rem;opacity:.8}
+nav.menu{display:flex;gap:4px;flex-wrap:wrap}
+nav.menu a,nav.menu button{color:#fff;text-decoration:none;background:none;border:0;font:inherit;font-size:.95rem;padding:8px 12px;border-radius:8px;cursor:pointer}
+nav.menu a:hover,nav.menu button:hover,nav.menu .active{background:rgba(255,255,255,.16)}
+main{max-width:1150px;margin:0 auto;padding:18px 14px 40px}
+h1{font-size:1.7rem;margin:.2em 0 .3em;line-height:1.2}
+h2{font-size:1.35rem;margin:1.2em 0 .5em}
+h3{font-size:1.1rem;margin:1em 0 .4em}
+.lead{color:var(--muted);margin-top:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-bottom:14px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}
+.g5{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+@media (max-width:820px){.g2{grid-template-columns:1fr}}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:999px;background:#efe7d3;color:#6b5314;border:1px solid #dccb9d;white-space:nowrap}
+.pill{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff}
+.pill.us{background:var(--blue)}.pill.gb{background:var(--red)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.filters button.on{background:#14233f;color:#fff;border-color:#14233f}
+.mapwrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:820px){.mapwrap{grid-template-columns:1fr}}
+.mapbox{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#cfe6f2;max-height:82vh}
+.mapinner{position:relative;width:100%}
+.mapinner img{display:block;width:100%;height:auto}
+.pin{position:absolute;width:24px;height:24px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.75rem;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.5);cursor:pointer;transform:translate(-50%,-50%);z-index:2}
+.pin.us{background:var(--blue)}.pin.gb{background:var(--red)}
+.pin.hide{display:none}
+.blist a.bitem{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:#fff;margin-bottom:8px}
+.blist a.bitem:hover{border-color:var(--blue);background:#f4f7fd}
+.bnum{flex:0 0 30px;height:30px;border-radius:50%;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.bnum.us{background:var(--blue)}.bnum.gb{background:var(--red)}
+.bitem.hide{display:none!important}
+.tl{position:relative;margin:20px 0;padding-left:28px}
+.tl:before{content:"";position:absolute;left:10px;top:0;bottom:0;width:4px;background:#d7cfbd;border-radius:2px}
+.tli{position:relative;margin:0 0 16px}
+.tli:before{content:"";position:absolute;left:-24px;top:16px;width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:#999}
+.tli.us:before{background:var(--blue)}
+.tli.gb:before{background:var(--red)}
+.tli .date{font-weight:800;color:var(--muted);font-size:.85rem}
+.q{margin-bottom:14px}
+.q .opts label{display:block;border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:6px 0;cursor:pointer;background:#fff}
+.q .opts label:hover{background:#f4f7fd}
+.q .opts input{margin-right:8px}
+.q.right label.correct{background:#e3f5e6;border-color:#4caf50}
+.q.wrong label.chosen{background:#fde8e7;border-color:#e57373}
+.q.wrong label.correct{background:#e3f5e6;border-color:#4caf50}
+.fb{font-size:.9rem;margin-top:6px;display:none}
+.q.right .fb,.q.wrong .fb{display:block}
+.btn{background:#14233f;color:#fff;border:0;border-radius:10px;padding:11px 18px;font:inherit;font-weight:700;cursor:pointer}
+.btn.alt{background:#fff;color:#14233f;border:1px solid #14233f;margin-left:8px}
+#score{font-size:1.15rem;font-weight:800;margin:12px 0}
+footer{overflow-wrap:anywhere;border-top:1px solid var(--line);background:#f2eee3;font-size:.8rem;color:var(--muted)}
+footer .in{max-width:1150px;margin:0 auto;padding:16px 14px}
+section.page{display:none}
+section.page.on{display:block}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="javascript:void(0)" onclick="goTo('home')">The Road to Independence<small>5 Key Battles &middot; Unit 2 &middot; Key Idea 7.3d</small></a>
+    <nav class="menu" aria-label="Main menu">
+      <button class="active" onclick="goTo('home')">Home / Map</button>
+      <button onclick="goTo('battles')">Battles</button>
+      <button onclick="goTo('timeline')">Timeline</button>
+      <button onclick="goTo('quiz')">Quiz</button>
+    </nav>
+  </div>
+</header>
 
+<main>
+<!-- HOME / MAP -->
+<section class="page on" id="p-home">
+  <h1>5 Battles That Shaped American Independence</h1>
+  <p class="lead">Click a pin on the map or select a battle from the list. <span class="tag">Standard: Key Idea 7.3d</span></p>
+  <div class="filters">
+    <button class="on" onclick="setFilter('all', this)">All battles</button>
+    <button onclick="setFilter('us', this)">American victories</button>
+    <button onclick="setFilter('gb', this)">British victories</button>
+  </div>
+  <div class="mapwrap">
+    <div class="mapbox">
+      <div class="mapinner">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Thirteencolonies_politics_cropped-en.jpg/800px-Thirteencolonies_politics_cropped-en.jpg" alt="Thirteen Colonies Map">
+        <div class="pin gb" style="left:76%;top:28%" onclick="showDetail('bunker')" title="Bunker Hill">1</div>
+        <div class="pin us" style="left:72%;top:43%" onclick="showDetail('trenton')" title="Trenton">2</div>
+        <div class="pin gb" style="left:68%;top:46%" onclick="showDetail('germantown')" title="Germantown">3</div>
+        <div class="pin us" style="left:70%;top:25%" onclick="showDetail('saratoga')" title="Saratoga">4</div>
+        <div class="pin us" style="left:65%;top:64%" onclick="showDetail('yorktown')" title="Yorktown">5</div>
+      </div>
+    </div>
+    <div>
+      <div class="blist">
+        <a class="bitem b-gb" href="javascript:void(0)" onclick="showDetail('bunker')"><div class="bnum gb">1</div><div><b>Battle of Bunker Hill</b><div class="lead" style="font-size:.85rem">June 17, 1775 &middot; British victory</div></div></a>
+        <a class="bitem b-us" href="javascript:void(0)" onclick="showDetail('trenton')"><div class="bnum us">2</div><div><b>Battle of Trenton</b><div class="lead" style="font-size:.85rem">December 26, 1776 &middot; American victory</div></div></a>
+        <a class="bitem b-gb" href="javascript:void(0)" onclick="showDetail('germantown')"><div class="bnum gb">3</div><div><b>Battle of Germantown</b><div class="lead" style="font-size:.85rem">October 4, 1777 &middot; British victory</div></div></a>
+        <a class="bitem b-us" href="javascript:void(0)" onclick="showDetail('saratoga')"><div class="bnum us">4</div><div><b>Battle of Saratoga</b><div class="lead" style="font-size:.85rem">Sept 19 &ndash; Oct 7, 1777 &middot; American victory (Turning point)</div></div></a>
+        <a class="bitem b-us" href="javascript:void(0)" onclick="showDetail('yorktown')"><div class="bnum us">5</div><div><b>Siege of Yorktown</b><div class="lead" style="font-size:.85rem">Sept 28 &ndash; Oct 19, 1781 &middot; American/French victory</div></div></a>
+      </div>
+      <div class="card">
+        <b>Quick Study Tip</b>
+        <p style="margin:.4em 0 0;font-size:.9rem">Even though the British won Bunker Hill and Germantown, their high casualties and strategic failures allowed Washington's army to stay in the war until France joined as an ally after Saratoga.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BATTLES OVERVIEW -->
+<section class="page" id="p-battles">
+  <h1>The Battles: Overview</h1>
+  <p class="lead">Select any battle below to view strategic details and outcomes. <span class="tag">Standard: Key Idea 7.3d</span></p>
+  <div class="grid g5">
+    <div class="card" style="cursor:pointer" onclick="showDetail('bunker')"><span class="pill gb">British Win</span><h3>1. Bunker Hill</h3><p class="lead" style="font-size:.85rem">June 17, 1775</p><p style="font-size:.9rem">Proved colonial militiamen could stand toe-to-toe with British regular troops.</p></div>
+    <div class="card" style="cursor:pointer" onclick="showDetail('trenton')"><span class="pill us">American Win</span><h3>2. Trenton</h3><p class="lead" style="font-size:.85rem">Dec 26, 1776</p><p style="font-size:.9rem">Washington crossed the Delaware River on Christmas night, restoring morale.</p></div>
+    <div class="card" style="cursor:pointer" onclick="showDetail('germantown')"><span class="pill gb">British Win</span><h3>3. Germantown</h3><p class="lead" style="font-size:.85rem">Oct 4, 1777</p><p style="font-size:.9rem">Despite defeat, European observers were impressed by Washington's bold attack plan.</p></div>
+    <div class="card" style="cursor:pointer" onclick="showDetail('saratoga')"><span class="pill us">American Win</span><h3>4. Saratoga</h3><p class="lead" style="font-size:.85rem">Oct 7, 1777</p><p style="font-size:.9rem">The major turning point that convinced France to officially sign an alliance with America.</p></div>
+    <div class="card" style="cursor:pointer" onclick="showDetail('yorktown')"><span class="pill us">American Win</span><h3>5. Yorktown</h3><p class="lead" style="font-size:.85rem">Oct 19, 1781</p><p style="font-size:.9rem">Cornwallis surrendered to Washington and French forces, ending major combat.</p></div>
+  </div>
+</section>
+
+<!-- BATTLE DETAIL -->
+<section class="page" id="p-detail">
+  <div id="detail-content"></div>
+</section>
+
+<!-- TIMELINE -->
+<section class="page" id="p-timeline">
+  <h1>Timeline: 1775&ndash;1781</h1>
+  <p class="lead">Chronological sequence of key Revolutionary War engagements. <span class="tag">Standard: Key Idea 7.3d</span></p>
+  <div class="tl">
+    <div class="tli gb"><div class="date">June 17, 1775</div><div class="card"><b>Battle of Bunker Hill (Breed's Hill)</b><p style="margin:.3em 0">British capture the hill after three assaults, but suffer over 1,000 casualties.</p></div></div>
+    <div class="tli us"><div class="date">December 26, 1776</div><div class="card"><b>Battle of Trenton</b><p style="margin:.3em 0">Surprise attack captures nearly 900 Hessian troops and revives the American cause.</p></div></div>
+    <div class="tli gb"><div class="date">October 4, 1777</div><div class="card"><b>Battle of Germantown</b><p style="margin:.3em 0">British hold Philadelphia, but the bold American assault earns European attention.</p></div></div>
+    <div class="tli us"><div class="date">October 17, 1777</div><div class="card"><b>Surrender at Saratoga</b><p style="margin:.3em 0">General Burgoyne surrenders his entire northern army; France enters the war.</p></div></div>
+    <div class="tli us"><div class="date">October 19, 1781</div><div class="card"><b>Surrender at Yorktown</b><p style="margin:.3em 0">Cornwallis trapped against the Chesapeake by French fleet and American army.</p></div></div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="page" id="p-quiz">
+  <h1>Quiz: 5 Key Battles</h1>
+  <p class="lead">Select your answers and click <b>Check my answers</b> below.</p>
+  <form id="qform">
+    <div class="card q" data-ans="b">
+      <b>1. Which battle is considered the turning point of the war because it brought France in as an ally?</b>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="a"> Trenton</label>
+        <label><input type="radio" name="q1" value="b"> Saratoga</label>
+        <label><input type="radio" name="q1" value="c"> Bunker Hill</label>
+      </div>
+      <div class="fb">Saratoga convinced King Louis XVI that the Americans could defeat a major British field army.</div>
+    </div>
+    <div class="card q" data-ans="a">
+      <b>2. Where did Washington lead a surprise attack on Christmas night in 1776?</b>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="a"> Trenton</label>
+        <label><input type="radio" name="q2" value="b"> Yorktown</label>
+        <label><input type="radio" name="q2" value="c"> Germantown</label>
+      </div>
+      <div class="fb">Washington crossed the icy Delaware River to defeat the Hessian garrison at Trenton.</div>
+    </div>
+    <div class="card q" data-ans="c">
+      <b>3. Which was the final major battle of the war, where General Cornwallis surrendered?</b>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="a"> Saratoga</label>
+        <label><input type="radio" name="q3" value="b"> Bunker Hill</label>
+        <label><input type="radio" name="q3" value="c"> Yorktown</label>
+      </div>
+      <div class="fb">The combined Franco-American siege forced Cornwallis to surrender in October 1781.</div>
+    </div>
+  </form>
+  <div id="score"></div>
+  <button class="btn" type="button" onclick="gradeQuiz()">Check my answers</button>
+  <button class="btn alt" type="button" onclick="resetQuiz()">Try again</button>
+</section>
+</main>
+
+<footer><div class="in">
+  <p><b>Map credit:</b> "Thirteen Colonies: political organization" from Wikimedia Commons. Licensed under CC BY-SA 3.0.</p>
+  <p>Made for 7th Grade Social Studies &middot; DoDEA CCRS-SS &middot; Unit 2: The Road to Independence &middot; Key Idea 7.3d.</p>
+</div></footer>
+
+<script>
+const BATTLES = {
+  bunker: {
+    title: "Battle of Bunker Hill",
+    date: "June 17, 1775",
+    result: "British Victory (Costly)",
+    summary: "Fought primarily on Breed's Hill near Boston. The colonial militia held off two major British advances until running low on ammunition on the third assault. While the British took the ground, they suffered over 1,000 casualties, proving to both sides that colonial forces could fight against regular British troops."
+  },
+  trenton: {
+    title: "Battle of Trenton",
+    date: "December 26, 1776",
+    result: "American Victory",
+    summary: "Facing enlistment expirations and low spirits, General Washington crossed the icy Delaware River on Christmas night. His forces launched a morning surprise assault against the Hessian garrison at Trenton, capturing nearly 900 prisoners with minimal American casualties and reigniting colonial support."
+  },
+  germantown: {
+    title: "Battle of Germantown",
+    date: "October 4, 1777",
+    result: "British Victory",
+    summary: "Following the British capture of Philadelphia, Washington launched a complex, four-pronged morning attack in heavy fog. Heavy resistance at the Chew House and friendly-fire confusion halted the advance. Despite the tactical loss, European observers were impressed that the Continental Army could organize such an aggressive offensive."
+  },
+  saratoga: {
+    title: "Battle of Saratoga",
+    date: "September 19 – October 7, 1777",
+    result: "American Victory (Turning Point)",
+    summary: "British General John Burgoyne's invasion plan from Canada stalled in upstate New York. Continental forces under Gates and Arnold surrounded Burgoyne's army, forcing his full surrender on October 17. This crucial victory persuaded France to formally sign treaties of alliance and provide military aid."
+  },
+  yorktown: {
+    title: "Siege of Yorktown",
+    date: "September 28 – October 19, 1781",
+    result: "American/French Victory",
+    summary: "British General Charles Cornwallis based his army at the deepwater port of Yorktown, Virginia. Washington's army and French ground forces marched south while the French fleet under de Grasse sealed the Chesapeake Bay. Trapped without naval resupply or escape, Cornwallis surrendered over 7,000 soldiers, effectively ending the war."
+  }
+};
+
+function goTo(pageId) {
+  document.querySelectorAll('section.page').forEach(el => el.classList.remove('on'));
+  const target = document.getElementById('p-' + pageId);
+  if (target) target.classList.add('on');
+}
+
+function showDetail(id) {
+  const b = BATTLES[id];
+  if (!b) return;
+  const container = document.getElementById('detail-content');
+  container.innerHTML = `
+    <button class="btn alt" style="margin-bottom:14px;margin-left:0" onclick="goTo('home')">&larr; Back to Map</button>
+    <h1>${b.title}</h1>
+    <p class="lead">${b.date} &middot; <b>Result:</b> ${b.result}</p>
+    <div class="card">
+      <h3>Significance & Overview</h3>
+      <p>${b.summary}</p>
+    </div>
+  `;
+  goTo('detail');
+}
+
+function setFilter(type, btn) {
+  document.querySelectorAll('.filters button').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+
+  document.querySelectorAll('.pin').forEach(pin => {
+    if (type === 'all' || pin.classList.contains(type)) {
+      pin.classList.remove('hide');
+    } else {
+      pin.classList.add('hide');
+    }
+  });
+
+  document.querySelectorAll('.blist a.bitem').forEach(item => {
+    if (type === 'all' || item.classList.contains('b-' + type)) {
+      item.classList.remove('hide');
+    } else {
+      item.classList.add('hide');
+    }
+  });
+}
+
+function gradeQuiz() {
+  const form = document.getElementById('qform');
+  const cards = form.querySelectorAll('.q');
+  let score = 0;
+  
+  cards.forEach(card => {
+    const ans = card.getAttribute('data-ans');
+    const checked = card.querySelector('input:checked');
+    card.classList.remove('right', 'wrong');
+    card.querySelectorAll('label').forEach(l => l.classList.remove('correct', 'chosen'));
+    
+    if (checked) {
+      if (checked.value === ans) {
+        score++;
+        card.classList.add('right');
+        checked.parentElement.classList.add('correct');
+      } else {
+        card.classList.add('wrong');
+        checked.parentElement.classList.add('chosen');
+        const correctLabel = card.querySelector(`input[value="${ans}"]`).parentElement;
+        correctLabel.classList.add('correct');
+      }
+    } else {
+      card.classList.add('wrong');
+      const correctLabel = card.querySelector(`input[value="${ans}"]`).parentElement;
+      correctLabel.classList.add('correct');
+    }
+  });
+  
+  const scoreBox = document.getElementById('score');
+  scoreBox.textContent = `Score: ${score} / ${cards.length}`;
+}
+
+function resetQuiz() {
+  const form = document.getElementById('qform');
+  form.reset();
+  form.querySelectorAll('.q').forEach(c => {
+    c.classList.remove('right', 'wrong');
+    c.querySelectorAll('label').forEach(l => l.classList.remove('correct', 'chosen'));
+  });
+  document.getElementById('score').textContent = '';
+}
+</script>
+</body>
+</html>
